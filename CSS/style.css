@@ -1,11 +1,12 @@
 .container {
     background-color: white
-
 }
+
 .container h1 {
     text-align: center;
     margin-top: 50px;
 }
+
 .card {
     border-radius: 10px;
     width: 100%;
@@ -15,6 +16,7 @@
     border-radius: 10px;
     box-shadow: 10px 5px 5px 10px rgb(193, 196, 197);
 }
+
 .row_1 {
     display: flex;
     align-items: center;
@@ -23,6 +25,7 @@
     padding-left: 25px;
     padding-bottom: 25px;
 }
+
 .row_1 input {
     /* flex: 1; */
     border: none;
@@ -30,6 +33,7 @@
     font-size: 15px;
     height: 35px;
 }
+
 #add {
     border: 1px solid blue;
     background-color: blue;
@@ -39,18 +43,13 @@
     height: 35px;
     width: 45px;
 }
+
+
 ul li {
-    position: relative;
-    padding: 5px 5px 15px;
-    font-size: 17px;
-    text-decoration: none;
     list-style: none;
-
+    
 }
 
-ul li.task::before {
-    text-decoration: line line-through;
-}
 
 
 .task {
@@ -72,17 +71,17 @@ label {
     flex-grow: 1;
     cursor: pointer;
 }
-.task-text::after {
+
+.task-text-after {
     content: '';
     text-decoration: line-through;
-
 }
 
-.task-text::before {
+/* .task-text::before {
     font-size: 16px;
     color: #333;
-    
-}
+
+} */
 
 .edit_btn {
     display: flex;
@@ -96,9 +95,14 @@ label {
     font-size: 16px;
 
 }
+
 .edit_btn .delete {
     color: red;
 }
+
 .edit {
     color: blue;
+}
+input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
 }
