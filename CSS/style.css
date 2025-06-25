@@ -103,9 +103,6 @@ label {
 .edit {
     color: blue;
 }
-input[type="checkbox"]:checked+label {
-    text-decoration: line-through;
-}
 .completed {
     text-decoration: line-through;
     color: gray; }
