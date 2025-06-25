@@ -51,3 +51,15 @@ function addTask(task){
         }
     }
  });
+
+ //event
+ document.getElementById("task_box").addEventListener("change", function (event) {
+  if (event.target.type === "checkbox") {
+    const taskText = event.target.closest("label").querySelector(".task-text");
+    if (event.target.checked) {
+      taskText.classList.add("completed");
+    } else {
+      taskText.classList.remove("completed");
+    }
+  }
+});
